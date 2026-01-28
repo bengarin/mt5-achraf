@@ -1,0 +1,64 @@
+; ============================================================
+; Gold EA Professional v2.0 - Configuration Correcte
+; Fichier: GoldEA_CORRECT.set
+; Date: 2026-01-28
+; ============================================================
+; IMPORTANT: Ces paramètres corrigent le problème SL/TP
+; SL = 1.5 × ATR (au lieu de 2.5 × ATR)
+; TP = 3.0 × ATR (au lieu de 1.5 × ATR)
+; R:R cible = 2.0 (au lieu de 0.49)
+; ============================================================
+
+; === PARAMÈTRES DE RISQUE (CORRIGÉS) ===
+InpSLMultiplier=1.50
+InpTPMultiplier=3.00
+InpRiskPercent=1.00
+InpMaxDailyDrawdown=5.00
+InpMaxPositions=3
+
+; === PARAMÈTRES ATR ===
+InpATRPeriod=14
+InpATRTimeframe=0
+
+; === PARAMÈTRES DE TRADING ===
+InpMagicNumber=123456
+InpSlippage=30
+InpSymbol=XAUUSD
+InpLotSize=0.01
+InpUseAutoLot=true
+
+; === PARAMÈTRES DE SESSION ===
+InpTradingStartHour=8
+InpTradingEndHour=20
+InpTradeOnMonday=true
+InpTradeOnTuesday=true
+InpTradeOnWednesday=true
+InpTradeOnThursday=true
+InpTradeOnFriday=true
+
+; === PARAMÈTRES DE STRATÉGIE ===
+InpRSIPeriod=14
+InpRSIOverbought=70
+InpRSIOversold=30
+InpMAPeriodFast=20
+InpMAPeriodSlow=50
+InpUseBreakoutStrategy=true
+InpUseTrendStrategy=true
+
+; === PARAMÈTRES DE LOGGING ===
+InpEnableLogging=true
+InpLogLevel=2
+InpEnableParameterVerification=true
+
+; === PARAMÈTRES AVANCÉS ===
+InpUseTrailingStop=false
+InpTrailingStopATR=1.00
+InpBreakevenATR=0.50
+InpPartialClosePercent=0.00
+
+; ============================================================
+; VALIDATION DES PARAMÈTRES:
+; - SL Multiplier: 1.50 (CORRECT)
+; - TP Multiplier: 3.00 (CORRECT)
+; - Risk/Reward Ratio: 2.00 (CORRECT)
+; ============================================================
